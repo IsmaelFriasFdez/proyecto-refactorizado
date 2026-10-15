@@ -1,17 +1,18 @@
 footer {
-    background-color: $gris-footer;
-    color: #aaa;
-    padding: 20px 40px;
-    text-align: center;
-    margin-top: 20px;
+  background-color: $color-primario;
+  color: #94a3b8;
+  padding: 25px 40px;
+  text-align: center;
+  margin-top: 40px;
 
-    p {
-        margin: 0;
-        line-height: 1.6;
-    }
+  p {
+    margin: 0;
+    font-size: 0.95em;
+  }
 
-    .copy-peq {
-        margin: 5px 0 0 0;
-        font-size: 0.9em;
-    }
+  .copy-peq {
+    margin-top: 6px;
+    font-size: 0.85em;
+    color: #64748b;
+  }
 }
