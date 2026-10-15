@@ -1,31 +1,38 @@
 nav {
-    background-color: $gris-oscuro;
-    padding: 10px 40px;
+    background-color: $color-primario;
+    padding: 0px 40px;
 
     ul {
         margin: 0;
         padding: 0;
-        list-style: none;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
     }
 
     li {
-        display: inline-block;
-        margin-right: 20px;
-
-        &:last-child {
-            margin-right: 0;
-        }
+        margin: 0;
     }
 
     a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1.1em;
+        display: block;
+        color: #94a3b8;
+        text-decoration: none; // Sin subrayado
+        font-family: $fuente-titulos;
+        font-weight: 600;
+        font-size: 1em;
+        padding: 16px 20px;
+        transition: all 0.3s ease;
+
+        &:hover {
+        color: $color-blanco;
+        background-color: rgba(255, 255, 255, 0.05);
+        }
 
         &.activo {
-            color: $azul-enlace;
+        color: $color-secundario;
+        border-bottom: 3px solid $color-secundario;
         }
     }
 }
